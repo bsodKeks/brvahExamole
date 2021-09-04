@@ -15,13 +15,6 @@ class Repository {
         )
         listItems.add(
             NotificationDTO(
-                date = "22.08.2021",
-                text = "Подписывайся на мой канал в Я.Дзен. Там подборки про разработу под андроид, изготовление простых, но полезных устройств на ардуино и просто красивые технические решения https://zen.yandex.ru/id/611d56d8d8fe357cd6b1b9d6",
-                isRead = false
-            )
-        )
-        listItems.add(
-            NotificationDTO(
                 date = "21.08.2021",
                 text = "Просто какой то тескт, чтобы просто посмотреть. Вообще часто мы занимаемся полной ерундой, написание этого теста не исключение",
                 isRead = false
@@ -30,17 +23,11 @@ class Repository {
         listItems.add(
             NotificationDTO(
                 date = "20.08.2021",
-                text = "Вот представь:  — У тебя есть 1000 рублей... Или, для круглого счета, пусть у тебя 1024",
+                text = "Вот представь:  — У тебя есть 1000 рублей... Или, для круглого счета, пусть у тебя 1024 гыгыгыгыгыгыгыгыгыгыгыгыг",
                 isRead = true
             )
         )
-        listItems.add(
-            NotificationDTO(
-                date = "18.08.2021",
-                text = "Мой первый пост на Дзене: https://zen.yandex.ru/media/id/611d56d8d8fe357cd6b1b9d6/radosti-ispolzovaniia-mobilnogo-kondicionera-i-dorabotki-dlia-nego-611df8fc6a368056921bacdf",
-                isRead = false
-            )
-        )
+
         listItems.add(
             NotificationDTO(
                 date = "18.08.2021",
