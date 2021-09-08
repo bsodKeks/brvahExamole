@@ -1,6 +1,7 @@
-package com.als.myapplication
+package com.als.myapplication.presentation.part1
 
-import com.als.myapplication.data.NotificationDTO
+import com.als.myapplication.R
+import com.als.myapplication.data.dto.NotificationDTO
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.viewholder.BaseViewHolder
 
@@ -13,8 +14,7 @@ class NotificationAdapter(data: MutableList<NotificationDTO>) :
 
     override fun convert(holder: BaseViewHolder, item: NotificationDTO) {
         holder.setGone(R.id.view, holder.layoutPosition == 0)
-
-        holder.setText(R.id.tvDateTime, item.date)
+            .setText(R.id.tvDateTime, item.date)
             .setText(R.id.tvDsc, item.text)
             .setImageResource(
                 R.id.ivState,

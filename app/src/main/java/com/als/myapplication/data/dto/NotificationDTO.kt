@@ -1,4 +1,4 @@
-package com.als.myapplication.data
+package com.als.myapplication.data.dto
 
 data class NotificationDTO(
     val date: String,
