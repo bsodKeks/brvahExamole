@@ -3,13 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/drawable/ic_agreement.xml" value="0.23796296296296296" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/drawable/ic_delete.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/drawable/ic_read.xml" value="0.26615384615384613" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/drawable/ic_refresh.xml" value="0.2703125" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/activity_part_three.xml" value="0.25" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/activity_part_three_section.xml" value="0.25" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/activity_part_two.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/activity_three.xml" value="0.25" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_mesage.xml" value="0.25" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_mesage_premium.xml" value="0.6" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_message.xml" value="0.6" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_notification.xml" value="0.4" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_notification_with_image.xml" value="0.4" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_premium_mesage.xml" value="0.25" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_section_header.xml" value="0.4" />
+        <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/item_title.xml" value="0.25" />
         <entry key="..\:/Users/alkor/AndroidStudioProjects/brvahExamole/app/src/main/res/layout/view_load_more.xml" value="0.1" />
       </map>
     </option>

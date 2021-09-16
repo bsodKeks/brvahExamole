@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="divider">#DDCBCB</color>
+    <color name="green">#37FF00</color>
+    <color name="gold">#BFFF9800</color>
+    <color name="very_light_gray">#0A000000</color>
 </resources>

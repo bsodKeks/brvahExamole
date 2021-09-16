@@ -11,7 +11,7 @@ import com.als.myapplication.R
 import com.als.myapplication.data.repository.Repository
 import com.als.myapplication.presentation.part2.PartTwoActivity
 
-class MainActivity : AppCompatActivity() {
+class PartOneActivity : AppCompatActivity() {
     private lateinit var rv: RecyclerView
     private val adapter = NotificationAdapter(mutableListOf())
     private val repository = Repository()

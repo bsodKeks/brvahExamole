@@ -1,4 +1,4 @@
-package com.als.myapplication.presentation.part2
+package com.als.myapplication.presentation.part3.section
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,22 +9,19 @@ import androidx.recyclerview.widget.RecyclerView
 import com.als.myapplication.R
 import com.als.myapplication.data.repository.Repository
 import com.als.myapplication.presentation.part3.multiItem.PartThreeMultiItemActivity
-import com.als.myapplication.presentation.part3.section.PartThreeSectionActivity
-import java.lang.Exception
+import com.chad.library.adapter.base.animation.AlphaInAnimation
 
-class PartTwoActivity : AppCompatActivity() {
+class PartThreeSectionActivity : AppCompatActivity() {
     private lateinit var rv: RecyclerView
-    private val adapter = NotificationWithImageAdapter(mutableListOf())
+    private val adapter = SectionAdapter(mutableListOf())
     private val repository = Repository()
-    private val customLoadMoreView = LoadMoreView()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_part_two)
+        setContentView(R.layout.activity_part_three_section)
         val btn = findViewById<Button>(R.id.btnNext)
         btn.setOnClickListener {
-            startActivity(Intent(this, PartThreeSectionActivity::class.java))
-            // startActivity(Intent(this, PartThreeMultiItemActivity::class.java))
+            startActivity(Intent(this, PartThreeMultiItemActivity::class.java))
         }
         rv = findViewById(R.id.rvNotification)
         rv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -33,10 +30,8 @@ class PartTwoActivity : AppCompatActivity() {
 
     private fun initAdapter() {
         rv.adapter = adapter
-        adapter.loadMoreModule.loadMoreView = customLoadMoreView
-        adapter.loadMoreModule.setOnLoadMoreListener { loadMore() }
-        adapter.loadMoreModule.isAutoLoadMore = true
-        adapter.setDiffCallback(NotificationDiffCallback())
+        adapter.animationEnable = true
+        adapter.adapterAnimation = AlphaInAnimation()
         adapter.setOnItemChildClickListener { _, view, position ->
             if (view.id == R.id.ivState) {
                 val item = adapter.getItem(position)
@@ -44,37 +39,17 @@ class PartTwoActivity : AppCompatActivity() {
                     item.isRead = true
                     adapter.notifyItemChanged(position)
                 } else {
-//                    deleteLocalItem(position)
-                    deleteRemoteItem(position)
+                    deleteLocalItem(position)
                 }
             }
         }
-        val data = repository.firstPage()
+        val data = repository.getSections()
         adapter.setNewInstance(data)
     }
 
     private fun deleteLocalItem(position: Int) {
         val item = adapter.getItem(position)
         adapter.remove(item)
-    }
-
-    private fun deleteRemoteItem(position: Int) {
-        val data = repository.deleteImagedItem(position)
-        adapter.setDiffNewData(data)
-    }
-
-    private fun loadMore() {
-        try {
-            val data = repository.nextPage()
-            adapter.addData(data)
-            adapter.loadMoreModule.isEnableLoadMore = true
-            adapter.loadMoreModule.loadMoreComplete()
-            if (repository.isEnd()) {
-                adapter.loadMoreModule.loadMoreEnd()
-            }
-        } catch (e: Exception) {
-            adapter.loadMoreModule.loadMoreFail()
-        }
     }
 
     override fun onDestroy() {
