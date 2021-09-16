@@ -1,6 +1,7 @@
 # Демо к циклу статей на хабре. Посвященного упрощению разработки адаптеров с [BRVAH](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 
-[Подписывайтесь  и ставьте лайки:)](https://habr.com/ru/users/bsod_keks/)
+[Подписывайтесь  и ставьте лайки:)](https://habr.com/ru/users/bsod_keks/)  
+[Телега](https://t.me/android_bsod)
 
 # Структура проекта
 
